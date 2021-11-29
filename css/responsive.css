@@ -1,0 +1,488 @@
+/* --- Web --- */
+@media only screen and (max-width: 1700px) {
+  .sidebar-subscribe__form {
+    grid-template: 1fr 1fr/1fr;
+    gap: 5px;
+  }
+  .sidebar-subscribe__form-input {
+    border-right: var(--main-border);
+  }
+  .sidebar-subscribe__form-btn {
+    width: 100%;
+  }
+  .sidebar-subscribe h4, .sidebar-subscribe__address {
+    text-align: center;
+  }
+}
+@media only screen and (max-width: 1440px) {
+  .container {
+    max-width: 1300px;
+  }
+
+  .flights__form-middle {
+    flex-direction: column;
+    min-height: 130px;
+  }
+  .flights__form-date {
+    width: 100%;
+    display: grid;
+    grid-template: 1fr/1fr 1fr;
+  }
+}
+/* --- Laptop Landscape --- */
+@media only screen and (max-width: 1366px) {
+  .container {
+    max-width: 1170px;
+  }
+}
+/* --- Tablet Landscape --- */
+@media only screen and (max-width: 1200px) {
+  .container {
+    max-width: clamp(940px, 95vw, 1100px);
+  }
+
+  .header__top {
+    flex-direction: column;
+  }
+  .header__top-list {
+    justify-content: center;
+  }
+  .header__top-actions {
+    display: grid;
+    grid-template: 1fr/1fr 1fr;
+  }
+  .header__top-actions a {
+    justify-content: center;
+  }
+  .header__bottom-bottomnav-list {
+    overflow-x: auto;
+  }
+  .header__bottom-bottomnav-list a {
+    white-space: nowrap;
+  }
+  .header__bottom-topnav-list a {
+    padding: 20px 10px;
+  }
+
+  .main__column {
+    padding: 20px 10px;
+  }
+  .main__sidebar-list li {
+    max-width: none;
+  }
+  .main__sidebar-list li::before {
+    top: auto;
+  }
+
+  .post-small {
+    max-height: none;
+  }
+  .post-aligned__link {
+    max-width: none;
+  }
+  .post-content-horizontal {
+    align-items: flex-start;
+  }
+  .post-global__image-wrap {
+    max-height: 400px;
+  }
+  .post-central-column {
+    align-items: flex-start;
+  }
+
+  .flights__tables {
+    padding: 20px 10px;
+  }
+  .flights__sidebar {
+    padding: 20px 10px;
+  }
+
+  .scores__inner {
+    padding: 20px 10px;
+  }
+  .scores__content {
+    grid-template: auto/1fr;
+    max-width: 100%;
+    min-width: 0;
+  }
+  .scores__right {
+    padding: 20px 0;
+  }
+
+  .stream__comments {
+    padding-right: 10px;
+  }
+  .stream__inner {
+    padding: 20px 0 20px 10px;
+  }
+
+  .posts__column {
+    padding: 20px 10px;
+  }
+  .posts__reviews, .posts__people {
+    margin: 0 -10px 0 -10px;
+    padding: 20px 10px;
+  }
+
+  .category__main,
+.category__top-block,
+.category__videos,
+.category__bordered-block {
+    padding: 20px 10px;
+  }
+
+  .category__people {
+    margin: 0;
+  }
+
+  .category__reviews {
+    margin: 20px 0 0 0;
+  }
+
+  .category__top-block {
+    margin-bottom: 0;
+  }
+
+  .category__videos {
+    margin-top: 0;
+  }
+
+  .category__bordered-block {
+    margin-bottom: 0;
+  }
+
+  .category__top-block .medium-banner,
+.category__top-block .main__socials {
+    margin-bottom: 20px;
+  }
+
+  .most-shared__inner {
+    padding: 20px 10px;
+  }
+  .most-shared__posts {
+    display: grid;
+    grid-template: auto/1fr 1fr;
+  }
+
+  .subscribe__inner,
+.footer__inner {
+    padding: 20px 10px;
+  }
+
+  .category-post__sidebar, .category-post__main {
+    padding: 20px 10px;
+  }
+
+  .comments__wrap {
+    padding: 20px 10px;
+    margin: 0 -10px;
+  }
+}
+/* --- Tablet Portrait --- */
+@media only screen and (max-width: 960px) {
+  .container {
+    max-width: clamp(748px, 95vw, 900px);
+  }
+
+  .search__selects {
+    flex-direction: column;
+  }
+
+  .top-banner {
+    display: none;
+  }
+
+  .header {
+    margin-top: 10px;
+  }
+  .header__middle {
+    padding: 20px;
+    display: grid;
+    grid-template: 1fr/repeat(3, 1fr);
+  }
+  .header__middle-right {
+    justify-content: flex-end;
+  }
+  .header__middle-logo {
+    margin: 0 auto;
+    width: 22vw;
+    min-width: 135px;
+  }
+  .header__top-nav {
+    display: none;
+  }
+  .header__bottom-topnav {
+    display: none;
+  }
+  .header__bottom-bottomnav {
+    padding: 0;
+  }
+  .header .nos-videos {
+    display: none;
+  }
+
+  div.header__video,
+div.header__middle-left {
+    display: none;
+  }
+
+  .main__inner {
+    grid-template: auto/1fr;
+  }
+  .main__column-center {
+    grid-row: 1/2;
+    border: none;
+  }
+
+  .flights__tables {
+    border-right: none;
+  }
+  .flights__sidebar {
+    padding: 20px 10px;
+  }
+  .flights__inner {
+    grid-template: auto/1fr;
+  }
+
+  .post-aligned {
+    justify-content: flex-start;
+  }
+
+  .scores__next-match {
+    grid-template: auto/1fr;
+  }
+  .scores__next-team:nth-child(2) {
+    border-left: none;
+  }
+
+  .posts__inner {
+    grid-template: auto/1fr;
+  }
+  .posts__right .post-aligned__image {
+    order: 0;
+  }
+  .posts__right .post-aligned__link {
+    order: 1;
+  }
+
+  .subscribe__inner {
+    grid-template: auto/1fr;
+  }
+
+  .burger {
+    display: flex;
+  }
+
+  .category-post__main {
+    border: none;
+  }
+  .category-post__inner {
+    grid-template: auto/1fr;
+  }
+
+  .comments__wrap {
+    padding-bottom: 0;
+  }
+
+  .category__top-block .medium-banner {
+    margin: 0 auto 20px auto;
+  }
+
+  .category__main-list .post-content-horizontal {
+    align-items: flex-start;
+  }
+
+  .category__inner {
+    grid-template: auto/1fr;
+  }
+
+  .category__main-top {
+    padding-bottom: 0;
+  }
+}
+/* --- Mobile Phones L--- */
+@media only screen and (max-width: 768px) {
+  .container {
+    max-width: calc(100% - 20px);
+  }
+
+  .header__socials {
+    display: none;
+  }
+
+  .main__inner {
+    grid-template: auto/1fr;
+  }
+  .main__column {
+    padding: 20px 10px;
+  }
+  .main__column-center {
+    grid-column: 1/2;
+    grid-row: 1/2;
+  }
+  .main__column-left {
+    grid-column: 1/2;
+    grid-row: 2/3;
+  }
+  .main__column-right {
+    grid-column: 1/2;
+    grid-row: 3/4;
+  }
+  .main__sidebar-list li {
+    justify-content: flex-start;
+  }
+
+  .flex-horizontal {
+    flex-direction: column;
+  }
+
+  .flights__form-destinations {
+    flex-direction: column;
+  }
+  .flights__form-date {
+    grid-template: 1fr 1fr/1fr;
+    border: none;
+    background-color: transparent;
+    gap: 20px;
+  }
+  .flights__form-middle {
+    min-height: 255px;
+    justify-content: flex-start;
+  }
+  .flights__form-date label + label::after {
+    display: none;
+  }
+  .flights__form-date label {
+    background-color: #fff;
+    border: var(--main-border);
+  }
+
+  .scores__team-info {
+    flex-direction: column;
+  }
+  .scores__team-info span {
+    order: 1;
+  }
+  .scores__team.right .scores__team-info {
+    align-items: flex-start;
+  }
+  .scores__team.left .scores__team-info {
+    align-items: flex-end;
+  }
+  .scores__team-flag {
+    order: 0;
+  }
+
+  .stream__inner {
+    padding: 10px;
+  }
+  .stream__content {
+    grid-template: auto/1fr;
+  }
+  .stream__comments-inner {
+    max-height: 300px;
+  }
+  .stream__comments-list li {
+    max-width: none;
+    padding-right: 10px;
+  }
+  .stream__comments {
+    padding: 0;
+  }
+
+  .post-radio {
+    padding: 15px 10px;
+    align-items: flex-start;
+  }
+
+  .slider-buttons .sw-p,
+.slider-buttons .sw-n {
+    display: none;
+  }
+
+  .footer__top {
+    grid-template: auto/1fr;
+  }
+
+  .comments__item-bottom {
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 20px;
+  }
+
+  .category__main-top {
+    grid-template: auto/1fr;
+  }
+}
+/* --- Mobile Phones M--- */
+@media only screen and (max-width: 425px) {
+  .post-central-column__image {
+    max-width: none;
+    max-height: 200px;
+    margin: 0 auto;
+  }
+
+  .flights__form-top {
+    flex-direction: column;
+    align-items: flex-start;
+  }
+
+  .scores__table-top {
+    flex-direction: column;
+    align-items: center;
+  }
+  .scores__team.right, .scores__team.left {
+    align-items: center;
+    padding-top: 0;
+  }
+  .scores__team.right .scores__team-info, .scores__team.left .scores__team-info {
+    align-items: center;
+  }
+  .scores__next-team {
+    padding: 10px;
+  }
+  .scores__left .scores__next-country {
+    flex-direction: column;
+    gap: 5px;
+  }
+  .scores__right .scores__sidebar-list li {
+    padding: 10px 0 10px 10px;
+  }
+
+  .post-central-column {
+    align-items: flex-start;
+  }
+
+  .most-shared__posts {
+    grid-template: auto/1fr;
+  }
+
+  .subscribe__inner {
+    gap: 30px;
+  }
+  .subscribe__form {
+    grid-template: auto/1fr;
+  }
+
+  .comments__item-comment {
+    flex-direction: column;
+  }
+
+  .comments__form-button {
+    width: 100%;
+  }
+
+  .post-content-horizontal {
+    grid-template: auto/1fr;
+  }
+
+  .post-content-horizontal__image {
+    max-width: none;
+  }
+}
+/* --- Mobile Phones S--- */
+@media only screen and (max-width: 360px) {
+  .kalendae {
+    left: 30px !important;
+  }
+}

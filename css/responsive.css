@@ -34,6 +34,10 @@
   .container {
     max-width: 1170px;
   }
+
+  .shop-product__item--grid {
+    grid-template: auto/1fr;
+  }
 }
 /* --- Tablet Landscape --- */
 @media only screen and (max-width: 1200px) {
@@ -177,6 +181,28 @@
     padding: 20px 10px;
     margin: 0 -10px;
   }
+
+  .shop__top-inner,
+.shop .gifts {
+    grid-template: auto/1fr 1fr;
+  }
+  .shop__top-slider,
+.shop .gifts__sale {
+    grid-row: 2/3;
+    grid-column: 1/3;
+  }
+  .shop__nav-list {
+    left: 10px;
+    padding-right: 10px;
+  }
+  .shop__inner {
+    padding: 0 10px;
+  }
+
+  .shop-product,
+.shop-category {
+    padding: 0 10px 50px;
+  }
 }
 /* --- Tablet Portrait --- */
 @media only screen and (max-width: 960px) {
@@ -299,6 +325,39 @@ div.header__middle-left {
   .category__main-top {
     padding-bottom: 0;
   }
+
+  .shop-product__inner {
+    grid-template: auto/1fr;
+  }
+  .shop-product__seller {
+    width: auto;
+  }
+
+  .shop-product__complain-form {
+    padding: 30px 15px;
+  }
+
+  .shop-category__main {
+    grid-template: 1fr/1fr;
+  }
+
+  .shop-category__items-filters {
+    display: inline-block;
+  }
+
+  .shop-category__sidebar {
+    position: absolute;
+    z-index: 99;
+    transform: translateX(-200%);
+    transition: transform 0.3s;
+    min-width: 275px;
+    box-shadow: 0 0 10px 0px rgba(0, 0, 0, 0.2);
+    overflow-y: auto;
+    max-height: 500px;
+  }
+  .shop-category__sidebar.is-active {
+    transform: translateX(0);
+  }
 }
 /* --- Mobile Phones L--- */
 @media only screen and (max-width: 768px) {
@@ -413,6 +472,29 @@ div.header__middle-left {
   .category__main-top {
     grid-template: auto/1fr;
   }
+
+  .shop__top-inner,
+.shop .gifts {
+    grid-template: auto/1fr;
+  }
+  .shop__offers {
+    grid-row: 2/3;
+    grid-column: 1/2;
+  }
+  .shop__top-slider,
+.shop .gifts__sale {
+    grid-row: 3/4;
+    grid-column: 1/2;
+  }
+
+  .shop-category__view {
+    display: none;
+  }
+
+  .custom-select__list {
+    right: 0;
+    left: auto;
+  }
 }
 /* --- Mobile Phones M--- */
 @media only screen and (max-width: 425px) {
@@ -478,6 +560,16 @@ div.header__middle-left {
 
   .post-content-horizontal__image {
     max-width: none;
+  }
+
+  .shop-product__complain-form form {
+    display: flex;
+    flex-direction: column;
+    gap: 25px;
+  }
+
+  .shop-product__complain-form form textarea {
+    margin-bottom: 0;
   }
 }
 /* --- Mobile Phones S--- */

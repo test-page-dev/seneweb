@@ -4921,8 +4921,8 @@ div.header__video-image {
 .shop-category__items-inner {
   display: grid;
   grid-template-columns: repeat(auto-fit, minmax(310px, 1fr));
-  -moz-column-gap: 30px;
-  column-gap: 30px;
+  -moz-column-gap: clamp(15px, 2vw, 30px);
+  column-gap: clamp(15px, 2vw, 30px);
   row-gap: 16px;
   margin-bottom: 35px;
 }

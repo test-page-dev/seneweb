@@ -524,6 +524,10 @@ div.header__middle-left {
     margin-right: auto;
     margin-left: 0;
   }
+
+  .shop__offer {
+    min-height: 350px;
+  }
 }
 /* --- Mobile Phones M--- */
 @media only screen and (max-width: 425px) {

@@ -5079,7 +5079,7 @@ div.header__video-image {
   border-bottom: none;
 }
 .shop-product__item--grid .shop-product__gallery-big {
-  min-height: clamp(260px, 30vw, 461px);
+  min-height: clamp(260px, 70vw, 461px);
   position: relative;
   display: grid;
 }
